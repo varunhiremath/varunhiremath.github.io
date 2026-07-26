@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Varun Hiremath — aerospace engineer and software developer building high-order CFD solvers that simulate turbulent combustion inside jet engines.">
+<meta name="author" content="Varun Hiremath">
+<meta property="og:title" content="Varun Hiremath">
+<meta property="og:description" content="Aerospace engineer and software developer — CFD, combustion simulation, and HPC for jet engines.">
+<meta property="og:type" content="website">
+<title>Varun Hiremath</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8C%80%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="dot"></span>varun.hiremath</a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#research">research</a>
+      <a href="#projects">open&nbsp;source</a>
+      <a href="#interests">interests</a>
+      <a href="#contact">contact</a>
+    </div>
+    <button class="toggle" id="themeBtn" aria-label="Toggle color theme"><span id="tIcon">◐</span><span id="tTxt">Dark</span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="flow" aria-hidden="true"></canvas>
+  <div class="hero-veil"></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow hero-eye">// SOFTWARE · <b>CFD</b> · COMBUSTION · JET ENGINES</p>
+    <h1>Varun<br><span class="grad">Hiremath</span></h1>
+    <p class="hero-sub">Aerospace engineer and software developer building <strong>high-order CFD solvers</strong> that simulate turbulent combustion inside jet engines — on hybrid CPU/GPU supercomputers.</p>
+    <div class="cta">
+      <a class="btn primary" href="#research">View the work →</a>
+      <a class="btn ghost" href="docs/VarunHiremath.pdf">Curriculum Vitae</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <span>Turbofan cutaway · combustor · fuel chemistry · GPU-accelerated CFD</span>
+    <span>GE Aerospace · 2022—present</span>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">// <b>01</b> — About</p>
+      <h2 class="section-title">From turbulence theory to production solvers.</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm an aerospace engineer and software developer. I earned my undergraduate degree in <strong>Aerospace Engineering at IIT Madras</strong>, then a <strong>Ph.D. at Cornell University</strong> in the Turbulence &amp; Combustion Group, completed in December 2012.</p>
+          <p style="margin-top:1.1rem">For nearly a decade at <strong>Siemens</strong> I helped build the flow and combustion physics inside <strong>STAR-CCM+</strong>. Today at <strong>GE Aerospace</strong> I develop a high-order LES/CFD solver designed for hybrid CPU/GPU architectures — writing the code that simulates combustion inside jet engines.</p>
+        </div>
+        <div class="idxcard">
+          <div class="row"><span class="k">Now</span><span class="v">GE Aerospace<small>High-order CFD solver</small></span></div>
+          <div class="row"><span class="k">Ph.D.</span><span class="v">Cornell University<small>Turbulence &amp; Combustion</small></span></div>
+          <div class="row"><span class="k">Focus</span><span class="v">CFD · Combustion<small>HPC · GPU computing</small></span></div>
+          <div class="row"><span class="k">Code</span><span class="v">Debian Developer<small>Open source since 2006</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal" style="background:var(--surface-2)">
+    <div class="wrap">
+      <p class="eyebrow">// <b>02</b> — Trajectory</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when">2022 — PRESENT</div>
+          <div class="tl-role">Aerospace Engineer</div>
+          <div class="tl-org">GE Aerospace</div>
+          <p class="tl-desc">Developing a high-order LES/CFD solver for hybrid CPU/GPU architectures.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">2013 — 2022</div>
+          <div class="tl-role">CFD Software Engineer</div>
+          <div class="tl-org">Siemens PLM · STAR-CCM+</div>
+          <p class="tl-desc">Flow &amp; Combustion teams — building the physics models behind a leading commercial CFD package.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">2008 — 2012</div>
+          <div class="tl-role">Ph.D., Turbulence &amp; Combustion</div>
+          <div class="tl-org">Cornell University</div>
+          <p class="tl-desc">Dimension reduction &amp; tabulation of chemistry for large-scale turbulent combustion simulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">// <b>03</b> — Research</p>
+      <h2 class="section-title">Making combustion chemistry fast enough to be useful.</h2>
+      <p class="res-lead">My work develops <strong>accurate and computationally efficient</strong> models and algorithms for simulating combustion. The methods were validated against experiment, delivered large speedups over existing approaches, and scaled across thousands of compute cores — now freely available and finding their way into commercial engine-design tools.</p>
+      <div class="chips">
+        <span class="chip">Software Development</span>
+        <span class="chip">Computational Fluid Dynamics</span>
+        <span class="chip">Combustion Simulation</span>
+        <span class="chip">Jet Engine Modeling</span>
+        <span class="chip">High-Performance Computing</span>
+        <span class="chip">ISAT · RCCE · GALI</span>
+      </div>
+
+      <div class="pubs">
+        <a class="pub" href="https://dx.doi.org/10.1080/13647830.2012.752109">
+          <span class="idx">[1]</span>
+          <span><span class="t">A Study of the Rate-Controlled Constrained-Equilibrium Dimension Reduction Method and its Different Implementations</span><span class="v">V. Hiremath, S. B. Pope · Combustion Theory and Modelling 17(2)</span></span>
+          <span class="yr">2013</span>
+        </a>
+        <a class="pub" href="https://dx.doi.org/10.1016/j.proci.2012.06.004">
+          <span class="idx">[2]</span>
+          <span><span class="t">Large-Scale Parallel Simulations of Turbulent Combustion using Combined Dimension Reduction and Tabulation of Chemistry</span><span class="v">V. Hiremath, S. R. Lantz, H. Wang, S. B. Pope · Proc. Combustion Institute 34(1)</span></span>
+          <span class="yr">2013</span>
+        </a>
+        <a class="pub" href="https://dx.doi.org/10.1016/j.fuel.2012.08.018">
+          <span class="idx">[3]</span>
+          <span><span class="t">Simulations of a turbulent non-premixed flame using combined dimension reduction and tabulation for combustion chemistry</span><span class="v">Z. Ren, G. M. Goldin, V. Hiremath, S. B. Pope · Fuel 105</span></span>
+          <span class="yr">2013</span>
+        </a>
+        <a class="pub" href="https://dx.doi.org/10.1016/j.combustflame.2012.04.013">
+          <span class="idx">[4]</span>
+          <span><span class="t">Computationally-Efficient and Scalable Parallel Implementation of Chemistry in Simulations of Turbulent Combustion</span><span class="v">V. Hiremath, S. R. Lantz, H. Wang, S. B. Pope · Combustion and Flame 159(12)</span></span>
+          <span class="yr">2012</span>
+        </a>
+        <a class="pub" href="https://dx.doi.org/10.1016/j.combustflame.2011.04.010">
+          <span class="idx">[5]</span>
+          <span><span class="t">Combined Dimension Reduction and Tabulation Strategy using ISAT-RCCE-GALI for the Efficient Implementation of Combustion Chemistry</span><span class="v">V. Hiremath, Z. Ren, S. B. Pope · Combustion and Flame 158(11)</span></span>
+          <span class="yr">2011</span>
+        </a>
+        <a class="pub" href="https://dx.doi.org/10.1080/13647830.2010.499964">
+          <span class="idx">[6]</span>
+          <span><span class="t">A Greedy Algorithm for Species Selection in Dimension Reduction of Combustion Chemistry</span><span class="v">V. Hiremath, Z. Ren, S. B. Pope · Combustion Theory and Modelling 14(5)</span></span>
+          <span class="yr">2010</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal" style="background:var(--surface-2)">
+    <div class="wrap">
+      <p class="eyebrow">// <b>04</b> — Open Source</p>
+      <h2 class="section-title">Code in the open.</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="k">Debian Developer · since 2006</div>
+          <h3>Debian GNU/Linux</h3>
+          <p>Official Debian Developer maintaining and contributing to packages in the Debian project for nearly two decades.</p>
+          <a href="https://qa.debian.org/developer.php?login=Varun+Hiremath">View maintained packages →</a>
+        </div>
+        <div class="card">
+          <div class="k">Research Tools</div>
+          <h3>ISAT-RCCE-GALI</h3>
+          <p>Combustion chemistry acceleration tools from my doctoral work, released freely for public and commercial use.</p>
+          <a href="https://tcg.mae.cornell.edu/ISATCK7/">Cornell TCG release →</a>
+        </div>
+        <div class="card">
+          <div class="k">Always learning</div>
+          <h3>New languages &amp; tools</h3>
+          <p>Exploring new programming languages and contributing to open-source projects in my spare time.</p>
+          <a id="ghLink" href="#">GitHub → coming soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="interests" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">// <b>05</b> — Off the clock</p>
+      <h2 class="section-title">Interests &amp; hobbies</h2>
+      <div class="hob">
+        <div>
+          <div class="h-k">🏓</div><h4>Pickleball</h4>
+          <p>Competitive play is my current obsession — fast games, good people.</p>
+          <div class="medal">🏅 A few medals won</div>
+        </div>
+        <div>
+          <div class="h-k">💪</div><h4>Gym &amp; fitness</h4>
+          <p>Recently all-in on training and staying strong and active.</p>
+        </div>
+        <div>
+          <div class="h-k">🌄</div><h4>Travel &amp; nature</h4>
+          <p>Exploring new places and getting out into the outdoors whenever I can.</p>
+        </div>
+        <div>
+          <div class="h-k">🐧</div><h4>Open source</h4>
+          <p>Debian Developer since 2006, tinkering with new languages for fun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal contact">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">// <b>06</b> — Contact</p>
+      <h2>Let's <span class="grad">talk shop.</span></h2>
+      <p style="color:var(--muted);max-width:44ch;margin:16px auto 0">Questions about CFD, combustion, HPC, or a pickleball game — feel free to reach out.</p>
+      <div class="social">
+        <a class="btn primary" id="emailLink" href="#">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/varun-hiremath-97161019" style="border-color:var(--border);color:var(--text)">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Varun Hiremath · built as a static site for GitHub Pages</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
