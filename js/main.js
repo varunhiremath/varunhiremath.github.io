@@ -20,8 +20,6 @@
     document.querySelectorAll('.js-email').forEach(function(el){
       el.setAttribute('href','mailto:'+addr);el.setAttribute('rel','nofollow');
     });
-    var g=document.getElementById('ghLink');
-    if(g)g.addEventListener('click',function(e){if(g.getAttribute('href')==='#')e.preventDefault();});
   })();
 
   /* ---------- scroll reveals ---------- */
