@@ -57,7 +57,8 @@ h1{font-size:clamp(2.9rem,8vw,5.6rem);line-height:1.0;font-weight:800;letter-spa
   margin:16px 0 0;text-wrap:balance}
 h1 .grad{background:var(--hot);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-role{margin:20px 0 0;font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:600;letter-spacing:-.01em}
-.rotator{color:var(--accent);white-space:nowrap}
+.rotator{color:var(--accent)}
+.hero-role{min-height:1.6em}
 .caret{display:inline-block;margin-left:1px;color:var(--accent);font-weight:400;animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
 .hero-sub{margin:20px 0 0;max-width:56ch;font-size:clamp(1rem,1.9vw,1.16rem);color:var(--muted)}

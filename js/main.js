@@ -56,7 +56,20 @@
   /* ---------- hero: typed / rotating line ---------- */
   (function(){
     var el=document.getElementById('rot');if(!el)return;
-    var words=['jet engines.','turbulent combustion.','GPU supercomputers.','cleaner engines.'];
+    var words=[
+      'am a Software Developer',
+      'am an Aerospace Engineer',
+      'am a Principal Software Engineer',
+      'build CFD solvers for jet engines',
+      'write scientific-computing software',
+      'simulate turbulent combustion',
+      'scale code across thousands of cores',
+      'am a Debian Developer',
+      'am a Pickleball Player',
+      'am a Nature Enthusiast',
+      'enjoy traveling & the outdoors',
+      'am a lifelong learner'
+    ];
     if(reduce){el.textContent=words[0];return;}
     var wi=0,ci=0,deleting=false;
     function tick(){
