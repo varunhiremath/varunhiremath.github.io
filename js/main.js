@@ -6,7 +6,7 @@
   var btn=document.getElementById('themeBtn'), tTxt=document.getElementById('tTxt');
   function apply(t){root.setAttribute('data-theme',t);if(tTxt)tTxt.textContent=(t==='dark'?'Dark':'Light');}
   var saved=localStorage.getItem('vh-theme');
-  apply(saved || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  apply(saved || 'light');   // light is the default; dark is opt-in via the toggle
   if(btn)btn.addEventListener('click',function(){
     var t=root.getAttribute('data-theme')==='dark'?'light':'dark';apply(t);localStorage.setItem('vh-theme',t);
   });
