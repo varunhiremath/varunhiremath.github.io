@@ -30,7 +30,12 @@
 
   /* ---------- header solidifies on scroll ---------- */
   var header=document.getElementById('site-header');
-  function onScroll(){if(header)header.classList.toggle('scrolled',window.scrollY>8);}
+  var heroEl=document.getElementById('top');
+  function onScroll(){
+    if(!header)return;
+    header.classList.toggle('scrolled',window.scrollY>8);
+    if(heroEl)header.classList.toggle('on-hero',window.scrollY < heroEl.offsetHeight-70);
+  }
   onScroll();addEventListener('scroll',onScroll,{passive:true});
 
   /* ---------- scroll-spy: highlight active nav link ---------- */
