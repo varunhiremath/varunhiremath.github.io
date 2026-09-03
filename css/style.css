@@ -46,8 +46,8 @@ nav.on-hero:not(.scrolled) .nav-links a.active{color:#fff}
 
 /* ---------- hero: full-bleed portrait, text anchored at the bottom ---------- */
 header.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;background:#0b1220;display:flex;align-items:flex-end;color:#fff}
-.hero-photo{position:absolute;inset:0;background:#0b1220 url('../img/varun-hero.jpg') 50% 40%/cover no-repeat;
-  transform-origin:50% 40%;animation:kenburns 18s linear infinite alternate}
+.hero-photo{position:absolute;inset:0;background:#0b1220 url('../img/hero.jpg') 62% 42%/cover no-repeat;
+  transform-origin:64% 40%;animation:kenburns 18s linear infinite alternate}
 @keyframes kenburns{from{transform:scale(1.04)}to{transform:scale(1.16)}}
 @media(prefers-reduced-motion:reduce){.hero-photo{animation:none}}
 .hero-scrim{position:absolute;inset:0;pointer-events:none;
