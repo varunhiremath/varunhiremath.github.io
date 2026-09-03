@@ -47,6 +47,7 @@ nav.on-hero:not(.scrolled) .nav-links a.active{color:#fff}
 /* ---------- hero: full responsive image (whole photo, no crop) ---------- */
 header.hero{position:relative;background:#0b1220;color:#fff}
 .hero-media{position:relative;line-height:0}
+.hero-media picture{display:block}
 .hero-img{display:block;width:100%;height:auto}
 .hero-scrim{position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg, rgba(6,10,20,.42) 0%, transparent 18%, transparent 52%, rgba(6,10,20,.5) 76%, rgba(6,10,20,.9) 100%)}
