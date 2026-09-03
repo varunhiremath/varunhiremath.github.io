@@ -76,6 +76,10 @@ h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:tex
 .scrollcue{position:absolute;left:50%;bottom:16px;z-index:3;transform:translateX(-50%);color:rgba(255,255,255,.6);
   font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;animation:bob 2s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,6px)}}
+.hero-loc{position:absolute;right:clamp(16px,5vw,40px);bottom:18px;z-index:3;display:flex;align-items:center;gap:7px;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78);
+  text-shadow:0 1px 12px rgba(0,0,0,.65)}
+.hero-loc svg{width:12px;height:12px;fill:currentColor;opacity:.9}
 @media(max-width:600px){.scrollcue{display:none}}
 
 /* ---------- sections ---------- */
